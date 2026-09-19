@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Adblock Marker Pro v3",
+  "version": "2.0",
+  "description": "Highlight ad and tracking elements using real filter lists and network detection.",
+  "permissions": [
+    "scripting",
+    "storage",
+    "webRequest",
+    "tabs",
+    "webRequestBlocking"
+  ],
+
+  "host_permissions": [
+    "<all_urls>"
+  ],
+
+  "background": {
+    "service_worker": "background_merge.js",
+    "type": "module"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content_merge_upd.js"],
+      "all_frames": true,
+      "run_at": "document_idle",
+      "match_about_blank": true
+    }
+  ],
+
+  "icons": {
+    "48": "icons/marker48.png"
+  }
+}
