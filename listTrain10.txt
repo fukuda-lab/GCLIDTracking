@@ -1,0 +1,10 @@
+https://google.com
+https://mail.ru
+https://microsoft.com
+https://facebook.com
+https://cloudflare.com
+http://amazonaws.com
+https://youtube.com
+https://dzen.ru
+https://apple.com
+https://instagram.com
